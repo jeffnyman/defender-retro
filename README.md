@@ -58,3 +58,34 @@ If on a Linux variant, make sure you have the following:
 ```sh
 sudo apt install build-essential flex
 ```
+
+### Build ASM6809 Assembler
+
+```sh
+cd asm6809
+./autogen.sh
+./configure
+```
+
+The `autogen.sh` script generates the configure script (from `configure.ac`, using autoconf) and any files it needs (like creating Makefile.in from Makefile.am using automake). This requires autotools to be installed on your system. The configure script generates `Makefile` and other files needed to build. If the above steps complete succesfully, you should be able to make everything.
+
+```sh
+make
+```
+
+### Build VASM Assembler
+
+```sh
+cd vasm
+make CPU=6800 SYNTAX=oldstyle
+```
+
+### Build Red Lebel Version
+
+With both ASM and VASM built, you should be able to build the binaries for <em>Defender</em>. This will require access to Python as it will use the included scripts in this repo.
+
+```sh
+make redlabel
+```
+
+This will create the `defend.[x]` numbered binaries (excluding 5) as well as the `defend.snd` file.

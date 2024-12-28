@@ -100,9 +100,16 @@ This will create the `defend.[x]` numbered binaries (excluding 5) as well as the
 
 ## Reference Implementation
 
-An executable <em>Defender</em> version is provided in the `reference` directory. This was the basis for determining the correct implementation of building from the sources. Technically there is no reason you need to worry about this, but should you want to generate the reference implementation ROm, you can do so like this:
+An executable <em>Defender</em> version is provided in the `reference` directory. This was the basis for determining the correct implementation of building from the sources. Technically there is no reason you need to worry about this, but should you want to generate the reference implementation ROM, you can first create the relevant executable:
 
 ```sh
 make extract
+```
+
+Then run the results script against the provided Defender executable.
+
+```sh
 ./reference/rom_extract -d -v -i ./reference/DEFENDER.EXE -o ./reference/defender.rom
 ```
+
+I should note that my `rom_extract.c` is a modified version of a C program that's existed since January of 1996, called `romgrab.c`, written by Jonathan Wolff. I don't have a whole lot of details but Jonathan's program was originally written as a utility to grab the ROM files from the Williams Arcade executables.

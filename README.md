@@ -12,6 +12,8 @@ In terms of the provenance of the code, ex-Williams engineers had previously don
 
 ## Build Instructions (WORK IN PROGRESS)
 
+On Windows, I would highly recommend using Windows Subsystem for Linux. Cygwin or other POSIX-based implementations might work as well.
+
 First, make sure you clone the repo:
 
 ```sh
@@ -95,3 +97,12 @@ make redlabel
 ```
 
 This will create the `defend.[x]` numbered binaries (excluding 5) as well as the `defend.snd` file.
+
+## Reference Implementation
+
+An executable <em>Defender</em> version is provided in the `reference` directory. This was the basis for determining the correct implementation of building from the sources. Technically there is no reason you need to worry about this, but should you want to generate the reference implementation ROm, you can do so like this:
+
+```sh
+make extract
+./reference/rom_extract -d -v -i ./reference/DEFENDER.EXE -o ./reference/defender.rom
+```

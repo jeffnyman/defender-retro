@@ -4,9 +4,11 @@
 
 </h1>
 
-The `source` directory contains the [Historical Source code](https://github.com/historicalsource/defender). This includes the single sound file from the [Historical source sound ROMs](https://github.com/historicalsource/williams-soundroms). The `source\labels` directory contains the binaries for the different labels of the game that were produced.
+The `source` directory contains the [Historical Source Defender source code](https://github.com/historicalsource/defender). This includes the single sound file from the [Historical Source Sound ROMS for Williams](https://github.com/historicalsource/williams-soundroms). The `source\labels` directory contains the binaries for the different labels of the game that were produced.
 
-The `src` directory is the original contents with certain modifications to make it possible to compile the source code as well as fill in any gaps.
+The `src` directory is the original source code with certain modifications to make it possible to compile that code on a relatively modern development chain.
+
+In terms of the provenance of the code, ex-Williams engineers had previously donated material to the Strong Museum of Play. Some of that was the work of [Sam Dickers on Defender](https://archives.museumofplay.org/repositories/3/resources/228).
 
 ## Build Instructions (WORK IN PROGRESS)
 
@@ -84,7 +86,7 @@ cd vasm
 make CPU=6800 SYNTAX=oldstyle
 ```
 
-### Build Red Lebel Version
+### Build Red Label Version
 
 With both ASM and VASM built, you should be able to build the binaries for <em>Defender</em>. This will require access to Python as it will use the included scripts in this repo.
 

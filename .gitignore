@@ -1,2 +1,4 @@
 bin/
 redlabel/
+reference/rom_extract
+*.rom

@@ -1,7 +1,17 @@
-.PHONY: clean
+.PHONY: clean extract
 
 DIRS=bin
 REDLABEL=redlabel
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+TARGET = reference/rom_extract
+SRC = rom_extract.c
+
+extract: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) -o $@ $<
 
 defender:
 	$(shell mkdir -p $(DIRS))
@@ -127,3 +137,4 @@ redlabel: defender
 clean:
 	-rm bin/*.o
 	-rm bin/*.lst
+	-rm -f $(TARGET)

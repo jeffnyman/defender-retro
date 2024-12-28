@@ -1,4 +1,8 @@
-# Retro Defender
+<h1 align="center">
+
+<img src="https://raw.githubusercontent.com/jeffnyman/retro-defender/master/assets/defender-title.jpg" alt="Retro Defender"/>
+
+</h1>
 
 The `source` directory contains the [Historical Source code](https://github.com/historicalsource/defender). This includes the single sound file from the [Historical source sound ROMs](https://github.com/historicalsource/williams-soundroms). The `source\labels` directory contains the binaries for the different labels of the game that were produced.
 

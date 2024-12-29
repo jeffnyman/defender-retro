@@ -10,6 +10,22 @@ The `src` directory is the original source code with certain modifications to ma
 
 In terms of the provenance of the code, ex-Williams engineers had previously donated material to the Strong Museum of Play. Some of that was the work of [Sam Dickers on Defender](https://archives.museumofplay.org/repositories/3/resources/228).
 
+## Running Defender
+
+You can use some ROM files to play _Defender_ via [MAME](https://www.mamedev.org/release.html). On Windows you can install this via a binary. On most POSIX systems:
+
+```sh
+sudo apt install mame
+```
+
+On Mac:
+
+```sh
+brew install mame
+```
+
+However, to be able to do this you have to generate the ROM files. And to do that, you have to build from source, which is what the next section is about.
+
 ## Build Instructions (WORK IN PROGRESS)
 
 On Windows, I would highly recommend using Windows Subsystem for Linux. Cygwin or other POSIX-based implementations might work as well.

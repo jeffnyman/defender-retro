@@ -4,6 +4,8 @@
 
 </h1>
 
+This project is related to my [Defender Red Label](https://github.com/jeffnyman/defender-redlabel) project, which attempt to create a generated _Defender_ clone from the ROM version generated in this repository.
+
 The `source` directory contains the [Historical Source Defender source code](https://github.com/historicalsource/defender). This includes the single sound file from the [Historical Source Sound ROMS for Williams](https://github.com/historicalsource/williams-soundroms). The `source\labels` directory contains the binaries for the different labels of the game that were produced.
 
 The `src` directory is the original source code with certain modifications to make it possible to compile that code on a relatively modern development chain.
@@ -26,7 +28,7 @@ brew install mame
 
 However, to be able to do this you have to generate the ROM files. And to do that, you have to build from source, which is what the next section is about.
 
-## Build Instructions (WORK IN PROGRESS)
+## Build Instructions
 
 On Windows, I would highly recommend using Windows Subsystem for Linux. Cygwin or other POSIX-based implementations might work as well.
 

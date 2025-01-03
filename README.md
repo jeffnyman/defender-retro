@@ -131,3 +131,15 @@ Then run the results script against the provided Defender executable.
 ```
 
 I should note that my `rom_extract.c` is a modified version of a C program that's existed since January of 1996, called `romgrab.c`, written by Jonathan Wolff. I don't have a whole lot of details but Jonathan's program was originally written as a utility to grab the ROM files from the Williams Arcade executables.
+
+## Credits
+
+The Historical Source repository provided the [original source code for _Defender_](https://github.com/historicalsource/defender).
+
+The [_Defender_ section of Computer Archeology](http://www.computerarcheology.com/Arcade/Defender/) provides a great deal of info on the internals.
+
+The [Williams hardware identification repository](https://www.robotron-2084.co.uk/williams/hardware) was extremely helpful in untangling the PCB information.
+
+The [_Defender_ entry at Museum of the Game](https://www.arcade-museum.com/Videogame/defender--williams) is useful for lots of historical information.
+
+This project benefitted massively from Rob Hogan's <a href="https://github.com/mwenge/defender">defender</a> repository. What I have done is clean up a lot of the source, provide consistency to the scripts, and include the reference implementations so that all work could be entirely recreated.

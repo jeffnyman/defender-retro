@@ -47,6 +47,8 @@ git submodule init
 git submodule update
 ```
 
+The tools used here are [ASM6809](https://www.6809.org.uk/asm6809/) and [VASM](http://www.compilers.de/vasm.html).
+
 ### Setup Tooling
 
 There are some Python scripts used as part of the building process, so you should have a version of Python 3 installed. On Linux:
